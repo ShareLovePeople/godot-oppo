@@ -1,0 +1,22 @@
+	
+	<meta-data android:name="debug_mode" android:value="true" />    
+	<meta-data android:name="is_offline_game" android:value="true" />  
+	<meta-data android:name="app_key" android:value="c5217trjnrmU6gO5jG8VvUFU0" />  
+	<activity
+			android:name="com.nearme.game.sdk.component.proxy.ProxyActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:process=":gcsdk"/>
+	<service
+			android:name="com.nearme.game.sdk.component.proxy.ProxyApiService"
+			android:process=":gcsdk"
+			android:priority="1000"/>
+
+	<activity android:name="com.oppo.mobad.activity.AdActivity" />
+	<service android:name="com.oppo.mobad.service.AdService" />
+	
+	<activity
+	android:name="com.oppo.mobad.activity.VideoActivity"
+	android:configChanges="keyboardHidden|orientation|screenSize"
+	android:screenOrientation="sensor" />
+
+
